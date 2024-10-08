@@ -1,7 +1,20 @@
+//variable to declare farm animal sounds
 const farmAnimals = 'cow horse sheep pig chicken';
+const [moo, neigh, baa, oink, cluck] = farmAnimals.split(' ');
+
+//variable to destructure and declare 4 traditional animal names
+const [bessie, ,dolly, babe, little] = farmAnimals.split(' ');
+//variable to destructure 3 traditional animal colors
+const [blackAndWhite, ,black, pink] = farmAnimals.split(' ');
 
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-
+//variable to destructure and declare the seven traditional rainbow color
+const [red, orange, yellow, green, blue, indigo, violet] = colors;
+//variable to destructure and declare the six rainbow color variables
+const [r, o, y, g, b, i, v] = colors;
+//variable to destructure and declare Indigo using indg
+const [, , , , , indg, ] = colors;
+console.log(indg);
 const muppet = {
   muppetName: 'Miss Piggy',
   color: 'pink',
@@ -9,6 +22,8 @@ const muppet = {
   job: 'Cast member of The Muppet Show',
   partner: 'Kermit'
 };
+//variable to destructure muppet 
+const {muppetName, color, song, job, partner} = muppet;
 
 const nestedMuppet = {
   nestedName: 'Kermit',
@@ -24,6 +39,12 @@ const nestedMuppet = {
   nestedJob: 'Host of The Muppet Show',
   nestedPartner: 'Miss Piggy'
 };
+//variable to destructure nestedMuppet
+const {song2, song4} = nestedMuppet.album.theMuppetMovie;
+const {nestedJob, nestedPartner} = nestedMuppet;
+
+
+
 
 // Strings
 
